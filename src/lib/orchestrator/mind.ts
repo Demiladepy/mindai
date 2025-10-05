@@ -4,7 +4,7 @@
 // // import { z } from "zod";
 
 // // const server = new McpServer({
-// //   name: "polymind-orchestrator",
+// //   name: "mindai-orchestrator",
 // //   version: "0.0.1",
 // // });
 
@@ -337,12 +337,12 @@
 // // // ---------------------------
 // // async function startServer() {
 // //   try {
-// //     console.log("[SERVER] Starting POLYMIND MCP Orchestrator...");
+// //     console.log("[SERVER] Starting mindai MCP Orchestrator...");
     
 // //     const transport = new StdioServerTransport();
 // //     await server.connect(transport);
     
-// //     console.log("[SERVER] POLYMIND MCP Orchestrator started successfully!");
+// //     console.log("[SERVER] mindai MCP Orchestrator started successfully!");
 // //     console.log("[SERVER] Available tools: route, handleRequest");
 // //     console.log("[SERVER] Supported agents: doc-parser, summary, query, livekit-stt, livekit-tts, exa");
 // //   } catch (error: any) {
@@ -353,12 +353,12 @@
 
 // // // Handle graceful shutdown
 // // process.on('SIGINT', () => {
-// //   console.log('[SERVER] Gracefully shutting down POLYMIND MCP Orchestrator...');
+// //   console.log('[SERVER] Gracefully shutting down mindai MCP Orchestrator...');
 // //   process.exit(0);
 // // });
 
 // // process.on('SIGTERM', () => {
-// //   console.log('[SERVER] Gracefully shutting down POLYMIND MCP Orchestrator...');
+// //   console.log('[SERVER] Gracefully shutting down mindai MCP Orchestrator...');
 // //   process.exit(0);
 // // });
 
@@ -381,7 +381,7 @@
 // import { queryDocument, queryAllDocuments, getSimilarQuestions } from "@/app/server/agents/query.js";
 
 // const server = new McpServer({
-//   name: "polymind-orchestrator",
+//   name: "mindai-orchestrator",
 //   version: "0.0.1",
 // });
 
@@ -863,12 +863,12 @@
 // // ---------------------------
 // async function startServer() {
 //   try {
-//     console.log("[SERVER] Starting POLYMIND MCP Orchestrator...");
+//     console.log("[SERVER] Starting mindai MCP Orchestrator...");
     
 //     const transport = new StdioServerTransport();
 //     await server.connect(transport);
     
-//     console.log("[SERVER] POLYMIND MCP Orchestrator started successfully!");
+//     console.log("[SERVER] mindai MCP Orchestrator started successfully!");
 //     console.log("[SERVER] Available tools: route, handleRequest, listDocuments, getQuestionSuggestions");
 //     console.log("[SERVER] Supported agents: doc-parser, summary, query, livekit-stt, livekit-tts, exa");
 //   } catch (error: any) {
@@ -879,12 +879,12 @@
 
 // // Handle graceful shutdown
 // process.on('SIGINT', () => {
-//   console.log('[SERVER] Gracefully shutting down POLYMIND MCP Orchestrator...');
+//   console.log('[SERVER] Gracefully shutting down mindai MCP Orchestrator...');
 //   process.exit(0);
 // });
 
 // process.on('SIGTERM', () => {
-//   console.log('[SERVER] Gracefully shutting down POLYMIND MCP Orchestrator...');
+//   console.log('[SERVER] Gracefully shutting down mindai MCP Orchestrator...');
 //   process.exit(0);
 // });
 
@@ -907,7 +907,7 @@ import {
 }  from "@/app/server/agents/query.js";
 
 const server = new McpServer({
-  name: "polymind-orchestrator",
+  name: "mindai-orchestrator",
   version: "0.0.1",
 });
 
@@ -1157,10 +1157,10 @@ async function callExaAgent(input: any) {
 // ---------------------------
 async function startServer() {
   try {
-    console.log("[SERVER] Starting POLYMIND MCP Orchestrator...");
+    console.log("[SERVER] Starting mindai MCP Orchestrator...");
     const transport = new StdioServerTransport();
     await server.connect(transport);
-    console.log("[SERVER] POLYMIND MCP Orchestrator started successfully!");
+    console.log("[SERVER] mindai MCP Orchestrator started successfully!");
     console.log("[SERVER] Available tools: route, handleRequest, listDocuments, getQuestionSuggestions");
     console.log("[SERVER] Supported agents: doc-parser, summary, query, livekit-stt, livekit-tts, exa");
   } catch (error: any) {

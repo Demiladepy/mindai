@@ -112,7 +112,7 @@ export default function Home() {
                   <span 
                     className="bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent"
                   >
-                    POLYMIND
+                    mindai
                   </span>
                 </h1>
                 <p className="font-body text-lg sm:text-xl lg:text-2xl text-muted-foreground max-w-2xl mx-auto lg:mx-0 leading-relaxed">
@@ -296,7 +296,7 @@ export default function Home() {
               Key Features
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Discover what makes POLYMIND the ultimate AI workspace for your team
+              Discover what makes mindai the ultimate AI workspace for your team
             </p>
           </motion.div>
 

@@ -4,7 +4,7 @@ import {
   
 } from '@clerk/nextjs'
 export const metadata = {
-  title: "Polymind",
+  title: "mindai",
   description: "A multi-agent AI workspace assistant",
 };
 

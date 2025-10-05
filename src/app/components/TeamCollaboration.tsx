@@ -22,7 +22,7 @@ const teamMembers = [
   {
     id: 1,
     name: "Sarah Chen",
-    email: "sarah@polymind.ai",
+    email: "sarah@mindai.ai",
     role: "Admin",
     status: "online",
     avatar: "/avatars/sarah.jpg",
@@ -34,7 +34,7 @@ const teamMembers = [
   {
     id: 2,
     name: "Alex Johnson",
-    email: "alex@polymind.ai",
+    email: "alex@mindai.ai",
     role: "Developer",
     status: "online",
     avatar: "/avatars/alex.jpg",
@@ -46,7 +46,7 @@ const teamMembers = [
   {
     id: 3,
     name: "Emma Davis",
-    email: "emma@polymind.ai",
+    email: "emma@mindai.ai",
     role: "Designer",
     status: "away",
     avatar: "/avatars/emma.jpg",
@@ -58,7 +58,7 @@ const teamMembers = [
   {
     id: 4,
     name: "Mike Wilson",
-    email: "mike@polymind.ai",
+    email: "mike@mindai.ai",
     role: "Manager",
     status: "offline",
     avatar: "/avatars/mike.jpg",
@@ -70,7 +70,7 @@ const teamMembers = [
   {
     id: 5,
     name: "Lisa Park",
-    email: "lisa@polymind.ai",
+    email: "lisa@mindai.ai",
     role: "User",
     status: "online",
     avatar: "/avatars/lisa.jpg",

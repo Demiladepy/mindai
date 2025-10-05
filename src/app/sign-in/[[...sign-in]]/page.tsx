@@ -49,7 +49,7 @@ export default function SignInPage() {
                 <h2 className="text-4xl font-bold text-gray-900 mb-4 leading-tight">
                   Welcome back to{" "}
                   <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
-                    POLYMIND
+                    mindai
                   </span>
                 </h2>
                 <p className="text-lg text-gray-600">

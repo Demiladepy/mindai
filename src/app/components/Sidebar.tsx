@@ -98,7 +98,7 @@ export function Sidebar() {
                   <Zap className="w-4 h-4 text-white" />
                 </div>
                 <span className="font-heading text-xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent">
-                  POLYMIND
+                  mindai
                 </span>
               </Link>
             )}

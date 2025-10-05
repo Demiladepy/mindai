@@ -5,7 +5,7 @@ import { useState } from "react";
 import Link from "next/link";
 import ThemeToggle from "./ThemeToggle";
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
+import { Separator } from "@/components/ui/separate";
 import { Menu, X, User } from "lucide-react";
 import {
   SignedIn,
@@ -85,7 +85,7 @@ export const Navbar = () => {
                   variants={logoVariants}
                   whileHover="hover"
                 >
-                  POLYMIND
+                  mindai
                 </motion.span>
               </Link>
             </motion.div>
