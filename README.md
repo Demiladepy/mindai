@@ -1,26 +1,41 @@
-# Polymind 🧠
-A multi-agent workspace assistant for remote teams.
+MINDai 🧠
 
-## Tech Stack
-- **Meta LLaMA** → Core AI for parsing, summarizing, Q&A.
-- **Cerebras** → Optimized inference for speed & efficiency.
-- **Docker MCP Toolkit + Gateway** → Containerized agents, orchestrated seamlessly.
-- **ChromaDB** → Memory & semantic search.
-- **Exa** → External research enrichment.
-- **LiveKit** → Voice-first agent.
+A collaborative multi-agent workspace assistant designed for remote teams.
 
-## Agents
-- Doc Parser Agent 📄
-- Summarizer Agent ✍️
-- Query Agent 🔍
-- Research Agent 🌐
-- Voice Agent 🎤
+Tech Stack
 
-## How It Works
-1. Upload docs → stored in **S3 + ChromaDB**.
-2. Agents process input in parallel.
-3. Cerebras + LLaMA optimize output.
-4. Orchestrator (via MCP) routes queries across agents.
-5. Final answer delivered via **chat UI** or **voice**.
+Meta LLaMA → Core language model for understanding, summarization, and Q&A.
 
+Cerebras → Powers fast, efficient model inference.
 
+Docker MCP Toolkit + Gateway → Runs and manages containerized agents smoothly.
+
+ChromaDB → Handles long-term memory and semantic search.
+
+Exa → Provides real-time external research capabilities.
+
+LiveKit → Enables voice-based agent interaction.
+
+Agents
+
+Doc Parser Agent 📄 – Extracts and structures information from uploaded documents.
+
+Summarizer Agent ✍️ – Condenses long texts into key takeaways.
+
+Query Agent 🔍 – Handles user questions with context-aware responses.
+
+Research Agent 🌐 – Enriches results using verified external data.
+
+Voice Agent 🎤 – Engages in natural, voice-first conversations.
+
+How It Works
+
+Users upload documents → stored in S3 and indexed in ChromaDB.
+
+Multiple agents process tasks in parallel for efficiency.
+
+Cerebras and LLaMA collaborate to refine and optimize outputs.
+
+The MCP Orchestrator intelligently routes tasks between agents.
+
+The final, context-rich response is delivered via a chat interface or voice interaction.
