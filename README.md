@@ -1,5 +1,7 @@
 # mindai 🧠
 
+<img src="/public/MINDAI.png" height="800" width="800" />
+
 mindai is a collaborative multi-agent workspace assistant built to enhance how remote teams work, communicate, and access information. It operates as an intelligent system composed of multiple specialized AI agents—each designed to handle different aspects of teamwork such as document parsing, summarization, research, querying, and voice interaction.
 
 By allowing these agents to collaborate in real time, mindai helps distributed teams manage knowledge more effectively. Instead of manually searching through files, writing summaries, or switching tools, team members can simply interact with mindai through chat or voice. The system coordinates multiple AI agents behind the scenes, processes data from documents and the web, and delivers accurate, context-aware insights.
