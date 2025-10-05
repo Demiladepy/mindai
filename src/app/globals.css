@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@700&family=Space+Mono:wght@400;700&display=swap');
+
+/* ===== Tailwind Directives ===== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Fonts ===== */
+:root {
+  /* Fonts */
+  --font-heading: 'Orbitron', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-agent: 'Space Mono', monospace;
+
+  /* Radius */
+  --radius: 0.625rem;
+
+  /* Light Mode Colors - FIXED */
+  --background: #ffffff;       /* white */
+  --foreground: #111111;       /* near black */
+
+  --card: #ffffff;             /* Pure white for cards to stand out */
+  --card-foreground: #111111;
+
+  --popover: #ffffff;
+  --popover-foreground: #111111;
+
+  --primary: #111111;          /* black */
+  --primary-foreground: #ffffff;
+
+  --secondary: #e5e5e5;        /* light gray */
+  --secondary-foreground: #111111;
+
+  --muted: #f5f5f5;            /* Slightly darker muted for better contrast */
+  --muted-foreground: #666666; /* Better contrast for muted text */
+
+  --accent: #333333;           /* dark gray */
+  --accent-foreground: #ffffff;
+
+  --destructive: #dc2626;      /* red */
+
+  --border: #e2e2e2;           /* Slightly darker border for visibility */
+  --input: #f8f8f8;           /* Light background for inputs */
+  --ring: #333333;
+
+  /* Sidebar */
+  --sidebar: #f7f7f7;
+  --sidebar-foreground: #111111;
+  --sidebar-primary: #111111;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e5e5e5;
+  --sidebar-accent-foreground: #111111;
+  --sidebar-border: #e5e5e5;
+  --sidebar-ring: #333333;
+}
+
+/* ===== Dark Mode ===== */
+.dark {
+  --background: #0a0a0a;       /* Darker black for better contrast */
+  --foreground: #f5f5f5;       /* near white */
+
+  --card: #171717;             /* Darker card background */
+  --card-foreground: #f5f5f5;
+
+  --popover: #171717;
+  --popover-foreground: #f5f5f5;
+
+  --primary: #f5f5f5;          /* white */
+  --primary-foreground: #111111;
+
+  --secondary: #2a2a2a;
+  --secondary-foreground: #f5f5f5;
+
+  --muted: #262626;            /* Darker muted background */
+  --muted-foreground: #a3a3a3; /* Better contrast for dark mode */
+
+  --accent: #f5f5f5;
+  --accent-foreground: #111111;
+
+  --destructive: #f87171;
+
+  --border: #404040;           /* Lighter border for dark mode visibility */
+  --input: #1f1f1f;           /* Dark input background */
+  --ring: #f5f5f5;
+
+  /* Sidebar */
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #f5f5f5;
+  --sidebar-primary: #f5f5f5;
+  --sidebar-primary-foreground: #111111;
+  --sidebar-accent: #2a2a2a;
+  --sidebar-accent-foreground: #f5f5f5;
+  --sidebar-border: #2a2a2a;
+  --sidebar-ring: #f5f5f5;
+}
+
+/* ===== Base Layer ===== */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  /* Root and body styling */
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    /* Ensure body has proper background */
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  /* App container styling */
+  #__next, .app-root {
+    @apply bg-background text-foreground font-body antialiased;
+    min-height: 100vh;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: var(--font-heading);
+  }
+
+  /* Enhanced glass effect */
+  .glass {
+    backdrop-filter: blur(16px);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+  }
+
+  .dark .glass {
+    background: rgba(23, 23, 23, 0.8);
+  }
+
+  .agent-text {
+    font-family: var(--font-agent);
+  }
+
+  /* Card enhancements for better visibility */
+  .card-enhanced {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+
+  .dark .card-enhanced {
+    box-shadow: 0 1px 3px rgba(255, 255, 255, 0.05);
+  }
+}
+
+/* ===== Clerk-specific fixes ===== */
+@layer components {
+  /* Force Clerk cards to have proper backgrounds */
+  .cl-card {
+    background: hsl(var(--card)) !important;
+    border: 1px solid hsl(var(--border)) !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  }
+
+  .dark .cl-card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  /* Ensure form elements have proper backgrounds */
+  .cl-formFieldInput {
+    background: hsl(var(--input)) !important;
+    border: 1px solid hsl(var(--border)) !important;
+  }
+
+  .cl-socialButtonsBlockButton {
+    background: hsl(var(--muted)) !important;
+    border: 1px solid hsl(var(--border)) !important;
+  }
+
+  /* Fix transparent issues */
+  .cl-rootBox {
+    background: transparent !important;
+  }
+
+  .cl-modalBackdrop {
+    background: rgba(0, 0, 0, 0.8) !important;
+    backdrop-filter: blur(4px) !important;
+  }
+
+  .cl-modalContent {
+    background: hsl(var(--card)) !important;
+    border: 1px solid hsl(var(--border)) !important;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04) !important;
+  }
+}
+
+/* ===== Utilities ===== */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .bg-card-solid {
+    background: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+  }
+}
