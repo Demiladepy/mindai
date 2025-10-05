@@ -23,7 +23,7 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+} from "@/components/ui/dropdown";
 import { useRouter } from "next/navigation";
 
 export function DashboardHeader() {

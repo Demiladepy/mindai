@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import { Sidebar } from "@/app/components/Sidebar";
 import { DashboardHeader } from "@/app/components/Header";
 import { AgentOverview } from "@/app/components/Agent";
-import { ActiveConversations } from "@/app/components/ActiveCoversations";
+import { ActiveConversations } from "@/app/components/Conversations";
 import { WorkspaceStats } from "@/app/components/Workspace";
 import { RecentActivity } from "@/app/components/RecentActivity";
-import { MemoryInsights } from "@/app/components/MemoryInsights";
+import { MemoryInsights } from "@/app/components/Memory";
 import { TeamCollaboration } from "@/app/components/TeamCollaboration";
 
 const containerVariants = {
