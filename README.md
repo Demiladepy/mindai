@@ -55,7 +55,7 @@ Voice Agent 🎤 – Engages in natural, voice-first conversations.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/mindai.git
+git clone https://github.com/Demiladepy/mindai.git
 cd mindai
 ```
 
